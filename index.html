@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarth | Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Samarth, a Web Developer specializing in HTML, CSS, JavaScript, React, and backend integration.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Particle Canvas for Milky Way Background -->
+    <canvas id="milky-way-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">S<span class="highlight">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section hidden-fade">
+            <div class="hero-content">
+                <p class="subtitle">Hello, I'm</p>
+                <h1 class="glitch" data-text="SAMARTH">SAMARTH</h1>
+                <h2 class="role">Web Developer</h2>
+                <p class="hero-desc">Building responsive, user-friendly, and visually stunning web applications.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-links-hero">
+                    <a href="mailto:samarth.s@ieee.org" aria-label="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/samarth-s-linkedin" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="tel:+918310847688" aria-label="Phone" target="_blank"><i class="fas fa-phone"></i></a>
+                    <a href="https://github.com" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section hidden-fade">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card about-card">
+                <p>Web Developer with a strong foundation in HTML, CSS, JavaScript, and React. Experienced in building responsive and user-friendly web applications, with a focus on clean code and intuitive UI/UX design. Skilled in developing, testing, and deploying web solutions that support business goals and enhance user experience. Eager to contribute to innovative web projects in fast-paced, collaborative environments.</p>
+                
+                <h3 class="subsection-title">Soft Skills</h3>
+                <ul class="soft-skills-list">
+                    <li><i class="fas fa-check-circle"></i> Strong Communication and Verbal ability</li>
+                    <li><i class="fas fa-check-circle"></i> Team Coordination</li>
+                    <li><i class="fas fa-check-circle"></i> Time Management & Quick Adaptability</li>
+                    <li><i class="fas fa-check-circle"></i> Problem-Solving</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section hidden-fade">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-code"></i> Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-database"></i> Programming & Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">C</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-tools"></i> Development Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">API Integration</span>
+                        <span class="tag">Frontend Development</span>
+                        <span class="tag">SDLC</span>
+                        <span class="tag">Modular Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-laptop-code"></i> Foundations</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Operating Systems</span>
+                        <span class="tag">Linux Commands</span>
+                        <span class="tag">OOP Principles</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section hidden-fade">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Local Food Donation System</h3>
+                            <a href="#" class="project-link" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p class="tech-stack">Java • DBMS • HTML/CSS • JS</p>
+                        <p class="project-desc">A Java-based web platform connecting food donors with receivers through location-based matching and database-driven donation management.</p>
+                        <ul class="project-details">
+                            <li><strong>Methodology:</strong> Community-based platform using OOP and SDLC.</li>
+                            <li><strong>Process:</strong> Built Java modules for donor/receiver workflows with JDBC connectivity, location search, and UI integration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>MedMatch</h3>
+                            <a href="#" class="project-link" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p class="tech-stack">Spring Boot • React • SQL</p>
+                        <p class="project-desc">An AI-powered healthcare platform that connects patients and doctors, enabling efficient referrals and personalized healthcare services.</p>
+                        <ul class="project-details">
+                            <li><strong>Methodology:</strong> Scalable system using modular architecture.</li>
+                            <li><strong>Process:</strong> Built backend services via Spring Boot and a dynamic React-based frontend.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Experience / Awards & Education Section -->
+        <section id="experience" class="section experience-section hidden-fade">
+            <div class="split-layout">
+                <!-- Certifications -->
+                <div class="experience-column">
+                    <h2 class="section-title left-align">Awards & Certifications</h2>
+                    <div class="timeline">
+                        <div class="timeline-item glass-card">
+                            <i class="fas fa-trophy timeline-icon"></i>
+                            <h4>IEEE Smart Cities Ad Hoc Committee</h4>
+                            <p class="timeline-meta">Joint Secretary</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <i class="fas fa-certificate timeline-icon"></i>
+                            <h4>NPTEL Cloud Computing</h4>
+                            <p class="timeline-meta">Certification</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <i class="fas fa-certificate timeline-icon"></i>
+                            <h4>DSA in Java by Physics Wallah</h4>
+                            <p class="timeline-meta">Certification</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <i class="fas fa-award timeline-icon"></i>
+                            <h4>Smart India Hackathon</h4>
+                            <p class="timeline-meta">Participation Certificate</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <i class="fas fa-award timeline-icon"></i>
+                            <h4>Agentic AI</h4>
+                            <p class="timeline-meta">Participation Certificate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="experience-column">
+                    <h2 class="section-title left-align">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item glass-card">
+                            <i class="fas fa-graduation-cap timeline-icon"></i>
+                            <h4>B.E in Computer Science & Engineering</h4>
+                            <p class="timeline-meta">New Horizon College of Engineering | Pursuing (2027)</p>
+                            <p class="timeline-score">CGPA: 8.1</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <i class="fas fa-university timeline-icon"></i>
+                            <h4>Pre-University Course (PUC) - Science</h4>
+                            <p class="timeline-meta">Sri Vidyaniketan PU College | 2023</p>
+                            <p class="timeline-score">Score: 91.33%</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <i class="fas fa-school timeline-icon"></i>
+                            <h4>Class X (CBSE)</h4>
+                            <p class="timeline-meta">Sri Vidyaniketan Public School | 2021</p>
+                            <p class="timeline-score">Score: 88%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section hidden-fade">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container glass-card">
+                <p class="contact-text">I'm currently looking for new opportunities in web development. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                
+                <div class="contact-details">
+                    <a href="mailto:samarth.s@ieee.org" class="contact-link"><i class="fas fa-envelope"></i> samarth.s@ieee.org</a>
+                    <a href="tel:+918310847688" class="contact-link"><i class="fas fa-phone"></i> +91 8310847688</a>
+                    <a href="https://linkedin.com/in/samarth-s-linkedin" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                
+                <a href="mailto:samarth.s@ieee.org" class="btn primary-btn mt-4">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by <strong>Samarth</strong>. Designed with a <br/>Milky Way aesthetic &amp; Semantic HTML/CSS/JS.</p>
+        <div class="footer-socials">
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/samarth-s-linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
